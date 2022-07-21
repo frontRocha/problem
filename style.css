@@ -660,6 +660,7 @@ ul li a {
 .img5 {
     width: 180px;
     height: 180px;
+    object-fit: cover;
 }
 
 @media screen and (max-width:1241px){
