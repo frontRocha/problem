@@ -1,4 +1,4 @@
-@charset "UTF8" ;
+@charset "UTF8";
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
@@ -26,17 +26,17 @@ a {
     text-decoration: none;
     transition-duration: .3s;
 }
-  
+
 a:hover {
     color: grey;
 }
-  
+
 #logo {
     font-size: 1.5rem;
     font-weight: bold;
     padding-left: 20px;
 }
-  
+
 #header {
     width: 100%;
     position: absolute;
@@ -47,16 +47,16 @@ a:hover {
     justify-content: center;
     background: transparent;
 }
-  
+
 #menu a {
     display: block;
     padding: 0.5rem;
 }
-  
+
 #btn-mobile {
     display: none;
 }
-  
+
 #menu {
     top: 0;
     padding-top: 60px;
@@ -67,80 +67,80 @@ a:hover {
     background: #000000;
     transition: 0.6s;
     z-index: 1000;
-    height: calc(100vh - 70px); 
+    height: calc(100vh - 70px);
 }
-  
+
 #nav.active #menu {
-    height: calc(100vh); 
+    height: calc(100vh);
     right: 85%;
     width: 15%;
 }
-  
+
 #section {
     filter: brightness(1);
     transition-duration: 1s;
 }
-  
+
 #section.off {
     filter: brightness(.5);
     overflow: hidden;
 }
-  
+
 #menu a {
     margin: 0 1rem;
     border-bottom: 2px solid rgba(0, 0, 0, 0.05);
 }
-  
-@media screen and (max-width:1295px){
-#nav.active #menu {
-    height: calc(100vh); 
-    right: 80%;
-    width: 20%;
-  }
+
+@media screen and (max-width:1295px) {
+    #nav.active #menu {
+        height: calc(100vh);
+        right: 80%;
+        width: 20%;
+    }
 }
-  
-@media screen and (max-width:999px){
-#nav.active #menu {
-    height: calc(100vh); 
-    right: 70%;
-    width: 30%;
-  }
+
+@media screen and (max-width:999px) {
+    #nav.active #menu {
+        height: calc(100vh);
+        right: 70%;
+        width: 30%;
+    }
 }
-  
-@media screen and (max-width:669px){
-#nav.active #menu {
-    height: calc(100vh); 
-    right: 50%;
-    width: 50%;
-  }
+
+@media screen and (max-width:669px) {
+    #nav.active #menu {
+        height: calc(100vh);
+        right: 50%;
+        width: 50%;
+    }
 }
-  
-@media screen and (max-width:500px){
-#menu {
-    top: 0;
-    padding-top: 60px;
-    display: block;
-    position: absolute;
-    width: 15%;
-    right: 130%;
-    background: #000000;
-    transition: 0.6s;
-    z-index: 1000;
-    height: calc(100vh - 70px); 
+
+@media screen and (max-width:500px) {
+    #menu {
+        top: 0;
+        padding-top: 60px;
+        display: block;
+        position: absolute;
+        width: 15%;
+        right: 130%;
+        background: #000000;
+        transition: 0.6s;
+        z-index: 1000;
+        height: calc(100vh - 70px);
+    }
+
+    ul li a {
+        font-size: 14px;
+    }
+
+
+    #nav.active #menu {
+        height: calc(100vh);
+        right: 50%;
+        width: 50%;
+    }
 }
-  
-ul li a {
-    font-size: 14px;
-}
-  
-  
-#nav.active #menu {
-    height: calc(100vh); 
-    right: 50%;
-    width: 50%;
-  }
-}
-  
+
 #btn-mobile {
     display: flex;
     font-size: 1rem;
@@ -148,11 +148,13 @@ ul li a {
     background: none;
     cursor: pointer;
 }
+
 #hamburger {
     border-top: 2px solid;
     width: 25px;
     z-index: 1;
 }
+
 #hamburger::after,
 #hamburger::before {
     content: '';
@@ -164,12 +166,15 @@ ul li a {
     transition: 0.3s;
     position: relative;
 }
+
 #nav.active #hamburger {
     border-top-color: transparent;
 }
+
 #nav.active #hamburger::before {
     transform: rotate(135deg);
 }
+
 #nav.active #hamburger::after {
     transform: rotate(-135deg);
     top: -7px;
@@ -182,12 +187,14 @@ ul li a {
     padding-top: 70px;
     height: auto;
 }
+
 .conteudo {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 .imagem {
     width: 75%;
     height: 78%;
@@ -197,9 +204,11 @@ ul li a {
     object-fit: cover;
     object-position: 0px 0px;
 }
+
 .text {
     margin-top: 50px;
 }
+
 .duis {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -208,11 +217,13 @@ ul li a {
     margin-right: 30px;
     white-space: nowrap;
 }
+
 .we {
     font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
     margin-bottom: 40px;
-}  
+}
+
 .read {
     border: 1px;
     border-radius: 10px;
@@ -220,64 +231,73 @@ ul li a {
     padding: 15px 25px;
     transition-duration: .5s;
 }
+
 .read:hover {
-    background-color: white; 
+    background-color: white;
 }
+
 .read a {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     color: white;
     transition-duration: .5s;
 }
+
 .read a:hover {
     color: black;
 }
 
-@media screen and (max-width:1348px){
+@media screen and (max-width:1348px) {
     .we {
         font-size: 3.50rem;
     }
 }
 
-@media screen and (max-width:1163px){
+@media screen and (max-width:1163px) {
     .duis {
         white-space: normal;
     }
+
     .we {
         font-size: 2.50rem;
     }
 }
 
-@media screen and (max-width:977px){
+@media screen and (max-width:977px) {
     .conteudo {
         flex-direction: column;
     }
+
     .imagem {
         height: 650px;
     }
+
     .text {
         text-align: center;
     }
+
     .duis {
         margin-bottom: 10px;
     }
 }
 
-@media screen and (max-width:779px){
+@media screen and (max-width:779px) {
     .imagem {
         width: 380px;
         height: 500px;
     }
+
     .text {
         margin-right: 2px;
         margin-left: 2px;
     }
+
     .duis {
         margin-right: 0;
     }
 }
 
-@media screen and (max-width:390px){
+@media screen and (max-width:390px) {
     .duis {
         margin-left: 20px;
         margin-right: 20px;
@@ -285,14 +305,16 @@ ul li a {
     }
 }
 
-@media screen and (max-width:200px){
+@media screen and (max-width:200px) {
     .imagem {
         width: 150px;
         height: 150px;
     }
+
     .duis {
         font-size: 0.80rem;
     }
+
     .we {
         font-size: 1.50rem;
     }
@@ -315,6 +337,7 @@ ul li a {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
+
 .hos {
     font-size: 3.25rem;
     padding-bottom: 20px;
@@ -337,7 +360,7 @@ ul li a {
     grid-gap: 10px;
 }
 
-.card{
+.card {
     display: flex;
     padding-bottom: 90px;
 }
@@ -348,45 +371,49 @@ ul li a {
 
 .cardh3 {
     font-size: 2rem;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
 }
 
 .cardp {
     font-size: 1.10rem;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
 }
 
-@media screen and (max-width:1186px){
+@media screen and (max-width:1186px) {
     .section2 {
-        top:-150px;
+        top: -150px;
     }
 }
 
-@media screen and (max-width:1030px){
+@media screen and (max-width:1030px) {
     .section2 {
-        top:-120px;
+        top: -120px;
     }
+
     .cardh3 {
         font-size: 1.50rem;
     }
+
     .cardp {
         font-size: 1rem;
     }
 }
 
-@media screen and (max-width:977px){
+@media screen and (max-width:977px) {
     .section2 {
         top: 30px;
     }
+
     .cardsflex {
         grid-template-columns: repeat(1, auto);
     }
 }
 
-@media screen and (max-width:312px){
+@media screen and (max-width:312px) {
     .hos {
         font-size: 2rem;
     }
+
     .card {
         flex-direction: column;
     }
@@ -405,7 +432,7 @@ ul li a {
 
 .balãoleft {
     background-color: #CE9699;
-    width: 520px; 
+    width: 520px;
     height: auto;
     min-width: 25%;
     margin-right: 30px;
@@ -429,7 +456,7 @@ ul li a {
 }
 
 .a {
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
 }
 
 .balãoright {
@@ -452,30 +479,34 @@ ul li a {
     text-align: center;
     color: black;
     font-size: 1.20rem;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
 }
 
-@media screen and (max-width:999px){
+@media screen and (max-width:999px) {
     .section3 {
         top: 0;
     }
+
     .balõesflex {
         flex-direction: column;
     }
+
     .balãoleft {
-        width: auto; 
+        width: auto;
         height: auto;
     }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:500px) {
     .wee {
         font-size: 2rem;
     }
+
     .balãoright {
         margin-top: 50px;
         height: auto;
     }
+
     .our {
         margin-bottom: 60px;
         white-space: normal;
@@ -483,24 +514,28 @@ ul li a {
     }
 }
 
-@media screen and (max-width:320px){
+@media screen and (max-width:320px) {
     .wee {
         font-size: 1.50rem;
     }
+
     .a {
         font-size: 0.80rem;
     }
+
     .balãoleft {
         margin-right: 0;
         margin-left: 0;
     }
+
     .balãoright {
         margin-right: 0;
         margin-left: 0;
-    
+
         margin-top: 50px;
         height: auto;
     }
+
     .our {
         margin-bottom: 60px;
         white-space: normal;
@@ -539,12 +574,13 @@ ul li a {
     display: flex;
 }
 
-.iphone,.android {
+.iphone,
+.android {
     margin: 20px;
     cursor: pointer;
 }
 
-.app {    
+.app {
     border: 2px solid #CE9699;
     background-color: transparent;
     border-radius: 20px;
@@ -559,7 +595,7 @@ ul li a {
     color: white;
 }
 
-.play {    
+.play {
     border: 2px solid #CE9699;
     background-color: #CE9699;
     color: white;
@@ -575,33 +611,38 @@ ul li a {
     color: black;
 }
 
-@media screen and (max-width:840px){
-.po {
-    font-size: 2.50rem;
-}
-.lo {
-    font-size: 1rem;
-}
+@media screen and (max-width:840px) {
+    .po {
+        font-size: 2.50rem;
+    }
+
+    .lo {
+        font-size: 1rem;
+    }
 }
 
-@media screen and (max-width:429px){
+@media screen and (max-width:429px) {
     .po {
         font-size: 2rem;
     }
+
     .lo {
         font-size: 0.80rem;
     }
+
     .buttons {
         flex-direction: column;
     }
 }
 
-@media screen and (max-width:300px){
+@media screen and (max-width:300px) {
     .text4 {
         margin-left: 0;
         margin-right: 0;
     }
-    .android,.iphone{
+
+    .android,
+    .iphone {
         margin: 0;
         margin-bottom: 30px;
     }
@@ -647,7 +688,7 @@ ul li a {
 .h3card5 {
     font-size: 1.50rem;
     color: white;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
 }
 
 .pcard5 {
@@ -663,52 +704,60 @@ ul li a {
     object-fit: cover;
 }
 
-@media screen and (max-width:1241px){
+@media screen and (max-width:1241px) {
     .cardsflex5 {
-        grid-template-columns: repeat(2, auto);  
+        grid-template-columns: repeat(2, auto);
     }
 }
 
-@media screen and (max-width:851px){
+@media screen and (max-width:851px) {
     .cardsflex5 {
-        grid-template-columns: repeat(1, auto);  
+        grid-template-columns: repeat(1, auto);
     }
 }
 
-@media screen and (max-width:345px){
+@media screen and (max-width:345px) {
     .card5 {
         height: 200px;
     }
+
     .cardsflex5 {
         margin-left: 0;
         margin-right: 0;
     }
+
     .img5 {
         width: 120px;
         height: 120px;
     }
+
     .card5 {
         width: 200px;
     }
+
     .h3card5 {
         font-size: 1.10rem;
     }
+
     .pcard5 {
         font-size: 1rem;
     }
 }
 
-@media screen and (max-width:220px){
+@media screen and (max-width:220px) {
     .img5 {
         width: 100px;
         height: 100px;
     }
+
     .card5 {
         width: 150px;
     }
+
     .h3card5 {
         font-size: 1rem;
     }
+
     .pcard5 {
         font-size: 0.80rem;
     }
@@ -728,13 +777,13 @@ ul li a {
 }
 
 .text6 {
-    margin:50px 100px;
+    margin: 50px 100px;
     white-space: nowrap;
 }
 
 .start {
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 2.50rem;  
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.50rem;
     margin-bottom: 160px;
 }
 
@@ -749,7 +798,7 @@ ul li a {
 }
 
 .safe {
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.90rem;
     font-weight: 600;
 }
@@ -778,7 +827,7 @@ ul li a {
 }
 
 .type {
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 2.20rem;
     text-align: left;
@@ -786,7 +835,7 @@ ul li a {
 }
 
 .preço {
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 2rem;
     text-align: left;
@@ -794,7 +843,7 @@ ul li a {
 }
 
 .descr {
-    font-family: 'Montserrat', sans-serif;  
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 20px;
@@ -809,7 +858,7 @@ ul li a {
 }
 
 .includes {
-    font-family: 'Montserrat', sans-serif;  
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 30px;
@@ -826,7 +875,7 @@ ul li a {
 .ulcard li {
     margin-bottom: 10px;
     color: white;
-    font-family: 'Montserrat', sans-serif;  
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.20rem;
 }
 
@@ -837,11 +886,11 @@ ul li a {
     margin-bottom: 110px;
 }
 
-.buttonstyle  {
+.buttonstyle {
     background-color: white;
     border: 1px solid white;
     color: black;
-    font-family:'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.10rem;
     transition-duration: .5s;
     padding: 20px 80px;
@@ -861,38 +910,38 @@ ul li a {
 }
 
 
-@media screen and (max-width:1403px){
-    
+@media screen and (max-width:1403px) {
+
     .conteudocard6 {
         margin: 20px 20px;
     }
-    
+
     .descr {
-        font-family: 'Montserrat', sans-serif;  
+        font-family: 'Montserrat', sans-serif;
         font-size: 0.90rem;
         font-weight: 600;
         margin-bottom: 20px;
     }
-    
+
     .ulcard li {
         margin-bottom: 10px;
         color: white;
-        font-family: 'Montserrat', sans-serif;  
+        font-family: 'Montserrat', sans-serif;
         font-size: 1.10rem;
     }
-    
-    .buttonstyle  {
+
+    .buttonstyle {
         background-color: white;
         border: 1px solid white;
         color: black;
-        font-family:'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 1.10rem;
         padding: 10px 70px;
         transition-duration: .5s;
     }
 }
 
-@media screen and (max-width:1279px){
+@media screen and (max-width:1279px) {
     .anuncio {
         flex-direction: column;
     }
@@ -902,20 +951,22 @@ ul li a {
     }
 }
 
-@media screen and (max-width:889px){
+@media screen and (max-width:889px) {
     .anunciocardsflex {
         width: 100%;
         justify-content: center;
         flex-direction: column;
     }
+
     .card6:nth-child(1) {
-        background-color:#EBD2D3;
+        background-color: #EBD2D3;
         width: 70%;
         height: auto;
         border-radius: 12%;
         margin: 0 auto;
         margin-bottom: 20px;
     }
+
     .card6:nth-child(2) {
         background-color: #CE9699;
         width: 70%;
@@ -927,7 +978,7 @@ ul li a {
     }
 }
 
-@media screen and (max-width:444px){
+@media screen and (max-width:444px) {
     .text6 {
         margin: 0 0;
         padding-left: 30px;
@@ -935,27 +986,32 @@ ul li a {
         margin-bottom: 30px;
         white-space: normal;
     }
+
     .anunciocardsflex {
         width: 100%;
         justify-content: center;
         flex-direction: column;
     }
+
     .type {
         font-size: 1.50rem;
         padding-right: 20px;
     }
+
     .preço {
         font-size: 1.25rem;
         padding-left: 10px;
     }
+
     .card6:nth-child(1) {
-        background-color:#EBD2D3;
+        background-color: #EBD2D3;
         width: 70%;
         height: auto;
         border-radius: 12%;
         margin: 0 auto;
         margin-bottom: 20px;
     }
+
     .card6:nth-child(2) {
         background-color: #CE9699;
         width: 70%;
@@ -965,38 +1021,44 @@ ul li a {
         margin-top: 20px;
         padding: 0px 10px;
     }
+
     .buttonstyle {
-    padding: 10px 30px;
-    font-size: 1rem;
+        padding: 10px 30px;
+        font-size: 1rem;
     }
+
     .cardbutton {
         margin-top: 30px;
         margin-bottom: 70px;
     }
 }
 
-@media screen and (max-width:350px){
+@media screen and (max-width:350px) {
     .anunciocardsflex {
         width: 100%;
         justify-content: center;
         flex-direction: column;
     }
+
     .type {
         font-size: 1rem;
         padding-right: 20px;
     }
+
     .preço {
         font-size: 0.80rem;
         padding-left: 10px;
     }
+
     .card6:nth-child(1) {
-        background-color:#EBD2D3;
+        background-color: #EBD2D3;
         width: 70%;
         height: auto;
         border-radius: 12%;
         margin: 0 auto;
         margin-bottom: 20px;
     }
+
     .card6:nth-child(2) {
         background-color: #CE9699;
         width: 70%;
@@ -1006,49 +1068,58 @@ ul li a {
         margin-top: 20px;
         padding: 0px 10px;
     }
+
     .buttonstyle {
-    padding: 10px 30px;
-    font-size: 1rem;
+        padding: 10px 30px;
+        font-size: 1rem;
     }
+
     .cardbutton {
         margin-top: 20px;
         margin-bottom: 40px;
     }
+
     .ulcard li {
         font-size: 1rem;
     }
 }
 
-@media screen and (max-width:250px){
+@media screen and (max-width:250px) {
     .start {
-        font-family: 'Montserrat', sans-serif; 
-        font-size: 1.25rem;  
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.25rem;
         margin-bottom: 160px;
     }
+
     .seg {
         display: flex;
         flex-direction: column;
         font-size: 0.80rem;
     }
+
     .descr {
         font-size: .80rem;
     }
+
     .type {
         font-size: 0.80rem;
         padding-right: 10px;
     }
+
     .preço {
         font-size: 0.70rem;
         padding-left: 10px;
     }
+
     .card6:nth-child(1) {
-        background-color:#EBD2D3;
+        background-color: #EBD2D3;
         width: 60%;
         height: auto;
         border-radius: 12%;
         margin: 0 auto;
         margin-bottom: 20px;
     }
+
     .card6:nth-child(2) {
         background-color: #CE9699;
         width: 60%;
@@ -1058,14 +1129,17 @@ ul li a {
         margin-top: 20px;
         padding: 0px 10px;
     }
+
     .buttonstyle {
-    padding: 10px 10px;
-    font-size: 0.80rem;
+        padding: 10px 10px;
+        font-size: 0.80rem;
     }
+
     .cardbutton {
         margin-top: 10px;
         margin-bottom: 20px;
     }
+
     .ulcard li {
         font-size: 0.80rem;
     }
@@ -1093,26 +1167,26 @@ footer {
 }
 
 footer h2 {
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-size: 2.50rem;
     margin-bottom: 20px;
 }
 
 footer h4 {
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.20rem;
     margin-bottom: 20px;
 }
 
 footer p {
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     margin-bottom: 30px;
 }
 
 footer h3 {
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 1.60rem;  
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.60rem;
 }
 
 footer ul li {
@@ -1122,7 +1196,7 @@ footer ul li {
 
 footer ul {
     margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 
@@ -1139,7 +1213,7 @@ form {
     border: 1px;
     border-radius: 10px;
     padding: 15px 20px;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     margin-bottom: 20px;
 }
@@ -1148,7 +1222,7 @@ form {
     border: 1px;
     border-radius: 10px;
     padding: 15px 20px;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     margin-bottom: 20px;
 }
@@ -1158,7 +1232,7 @@ textarea {
     border: 1px;
     border-radius: 10px;
     padding: 15px 20px;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     margin-bottom: 20px;
     max-width: 87%;
@@ -1175,36 +1249,38 @@ textarea {
     border: 1px;
     border-radius: 10px;
     background-color: #cc7a7d;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     color: white;
     font-size: 1.20rem;
 }
 
-@media screen and (max-width:965px){
+@media screen and (max-width:965px) {
     .informaçõesRodapé {
         width: 300px;
         flex-direction: column;
         margin: 0 auto;
     }
+
     .btnform {
         justify-content: initial;
     }
 }
 
-@media screen and (max-width:447px){
+@media screen and (max-width:447px) {
     .informaçõesRodapé {
-        flex-direction: column; 
+        flex-direction: column;
         margin-left: 20px;
     }
+
     .btnform {
         justify-content: initial;
     }
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:375px) {
     .informaçõesRodapé {
-        flex-direction: column; 
+        flex-direction: column;
         margin-left: 20px;
     }
 
@@ -1215,61 +1291,62 @@ textarea {
     footer h2 {
         font-size: 2rem;
     }
-    
+
     footer h4 {
         width: 50%;
         font-size: 0.80rem;
     }
-    
+
     footer p {
         width: 50%;
         font-size: 0.80rem;
     }
-    
+
     footer h3 {
-        font-family: 'Montserrat', sans-serif; 
-        font-size: 1rem;  
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
     }
 
     footer ul li {
         width: 50%;
         font-size: 0.80rem;
     }
-    
+
     form {
         width: 200px;
     }
-    
+
     #name {
         font-size: 1rem;
     }
-    
+
     #email {
         font-size: 1rem;
     }
-    
+
     textarea {
         max-width: 80%;
         max-height: 100px;
     }
-    
+
     .sub {
         padding: 20px 60px;
         border: 1px;
         border-radius: 10px;
         background-color: #cc7a7d;
-        font-family: 'Montserrat', sans-serif; 
+        font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         color: white;
         font-size: 1rem;
     }
 }
 
-@media screen and (max-width:245px){
+@media screen and (max-width:245px) {
     .rodapéimagens {
         width: 25px;
         margin-bottom: 30px;
     }
+
     footer h2 {
         width: 40%;
         font-size: 1.25rem;
@@ -1278,11 +1355,11 @@ textarea {
     footer h4 {
         width: 40%;
     }
-    
+
     footer p {
         width: 40%;
     }
-    
+
     footer h3 {
         width: 40%;
     }
@@ -1291,20 +1368,20 @@ textarea {
         width: 100px;
         justify-content: center;
     }
-    
+
     #name {
         font-size: 0.50rem;
     }
-    
+
     #email {
         font-size: 0.50rem;
     }
-    
+
     textarea {
         max-width: 60%;
         max-height: 100px;
     }
-    
+
     .sub {
         padding: 20px 25px;
         font-size: 0.80rem;
@@ -1313,7 +1390,7 @@ textarea {
 
 .créditos {
     padding-top: 30px;
-    font-size:0.50rem;    
+    font-size: 0.50rem;
     width: 100%;
     text-align: center;
     background-color: #333333;
@@ -1334,10 +1411,3 @@ textarea {
     margin-left: 10px;
     margin-right: 10px;
 }
-
-
-
-
-
-
-
